@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1700519939">
+  <File Type="PA-TCL" Name="mips_without_fwd.tcl"/>
+  <File Type="REPORTS-TCL" Name="mips_without_fwd_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="mips_without_fwd.msk"/>
+  <File Type="RDI-RDI" Name="mips_without_fwd.vdi"/>
+  <File Type="BG-BIT" Name="mips_without_fwd.bit"/>
+  <File Type="BG-DRC" Name="mips_without_fwd.drc"/>
+  <File Type="BG-BGN" Name="mips_without_fwd.bgn"/>
+  <File Type="BG-BIN" Name="mips_without_fwd.bin"/>
+  <File Type="BITSTR-RBT" Name="mips_without_fwd.rbt"/>
+  <File Type="BITSTR-NKY" Name="mips_without_fwd.nky"/>
+  <File Type="BITSTR-BMM" Name="mips_without_fwd_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="mips_without_fwd.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="mips_without_fwd.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="mips_without_fwd.ltx"/>
+  <File Type="RCFI_FILE" Name="mips_without_fwd.rcfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="mips_without_fwd_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="mips_without_fwd.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mips_without_fwd_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="mips_without_fwd_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="mips_without_fwd_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mips_without_fwd_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="mips_without_fwd_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="mips_without_fwd_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="mips_without_fwd_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="mips_without_fwd_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mips_without_fwd_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="mips_without_fwd_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mips_without_fwd_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mips_without_fwd_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="mips_without_fwd.pdi"/>
+  <File Type="CFI_FILE" Name="mips_without_fwd.cfi"/>
+  <File Type="RNPI_FILE" Name="mips_without_fwd.rnpi"/>
+  <File Type="NPI_FILE" Name="mips_without_fwd.npi"/>
+  <File Type="RBD_FILE" Name="mips_without_fwd.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/mips_without_fwd.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mips_without_fwd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

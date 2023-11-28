@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 20 16:39:03 2023
+# Process ID: 8824
+# Current directory: C:/Users/Atul/MIPS_hazard_handling/MIPS_hazard_handling.runs/synth_1
+# Command line: vivado.exe -log mips_without_fwd.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips_without_fwd.tcl
+# Log file: C:/Users/Atul/MIPS_hazard_handling/MIPS_hazard_handling.runs/synth_1/mips_without_fwd.vds
+# Journal file: C:/Users/Atul/MIPS_hazard_handling/MIPS_hazard_handling.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mips_without_fwd.tcl -notrace
